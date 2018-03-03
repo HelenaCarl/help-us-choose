@@ -13,12 +13,23 @@
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button>Kör!</button>
     <div>
-      <img src="http://www.highdefinition.se/pics/Devils%20Advocate_header.jpg" alt="djävulens-advokat" width="300" height="100">
+      <img src="http://www.highdefinition.se/pics/Devils%20Advocate_header.jpg" alt="djävulens-advokat" width="290" height="88">
     </div>
-    <div>
-      <img src="images/96afda17f7625f9e1f8e77be44fa0f90.jpg" alt="wanna-dance" width="300" height="200">
-    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('resultSection').hide()
+
+      var addOption = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+      $ ('.addOption').click(addOption)
+      })
+    </script>
   </body>
 </html>
